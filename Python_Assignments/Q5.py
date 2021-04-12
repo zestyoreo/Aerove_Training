@@ -1,8 +1,8 @@
 
 n=int(input("Enter the number of days: "))
 prices=[]
-for i in range(n):
-    prices.append(int(input()))
+
+prices = [int(x) for x in input().split()]
 
 greatest=prices[1]-prices[0]
 buy=0
@@ -14,4 +14,4 @@ for i in range(n):
             buy=i
 
 print(greatest)
-print(buy)
+print(buy+1)
