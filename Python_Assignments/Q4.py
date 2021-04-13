@@ -3,10 +3,9 @@ from numpy import random
 
 x = random.normal(size=(20, 20))
 
-a=random.rand((20))
-a=a*100
-y=a.astype('i')
-print(y)
+y=np.random.randint(10000,size=(20))
+y=y.astype('i')
+print(y.dtype)
 
 xt=x.transpose()
 theta=xt @ x
