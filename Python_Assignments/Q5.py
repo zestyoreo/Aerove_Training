@@ -12,6 +12,8 @@ for i in range(n):
         if greatest<(prices[j]-prices[i]):
             greatest=prices[j]-prices[i]
             buy=i
-
-print(greatest)
+if greatest>=0:
+    print(greatest)
+else:
+    print("Don't trade cause the stock price falls everyday")
 print(buy+1)
